@@ -1,0 +1,4 @@
+To get the password I would first look at the entire list given to me in the /etc/shadow file. I would then see if it is a MD5, Blowfish, 
+SHA-256, or SHA-512 hash printed as a hexa-decimal string. I would get these hexadecimal strings by using Python’s hash-lib library 
+which can encode passwords into MD5, Blowfish, SHA-256, or SHA-512 hash. I can then use hexdigest() to convert the encoded 
+data into a hexadecimal string. The only password which matched the MD5, Blowfish, SHA-256, or SHA-512 format was : philip-kocher.
